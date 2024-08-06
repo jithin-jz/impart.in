@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <title>top wear</title>
+  <style>
+    .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-spacing: 8px;
+  font-family: 'Futura', 'Proxima Nova', 'Avenir', 'Gotham', sans-serif;
+  font-weight: bolder;
+  font-size: small;
+}
+
+.nav {
+    padding: 10px 0;
+  }
+
+  .nav img {
+    width: 60px;
+    height: 50px;
+    margin-top: 20px;
+  }
+
+  .nav a {
+    margin-left: 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    margin-top: 20px;
+    cursor: pointer;
+}
+.main-text{
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 50px;
+    display: block;
+}
+.sub-text{
+    text-align: center;
+    justify-content: center;
+    color: gray;
+    font-size: small;
+    letter-spacing: 4px;
+    
+
+}
+.banners{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  margin-top: 30px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 26px;
+  text-align: center; 
+}
+
+.card img {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+}
+.price{
+  font-family: sans-serif;
+  font-size: small;
+  font-weight: 500;
+}
+
+button {
+  padding: 10px 40px;
+  font-size: 10.2px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+  margin: 2px 2px;
+  
+}
+
+.add-to-cart {
+  background-color: rgb(13, 12, 12);
+  color: white;
+  border-radius: 4px;
+  position: relative;
+}
+
+.add-to-cart .icon {
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.buy-now {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius:4px;
+}
+
+.buy-now:hover, .add-to-cart:hover {
+  opacity: 0.8;
+}
+ footer {
+  background-color:black;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 25px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 0px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.bi{
+margin: 4px 4px;
+}
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+.price{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: small;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img style=" width: 60px;
+      height: 50px;
+      margin-top: 20px;" src="images/logo.png" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a style="margin-left: 1000px;
+          text-decoration: none;
+          color: black;" href="Buy/payment.html">CART</a>
+          <!-- <i style="margin-left: 10px;" class="bi bi-bag"></i>
+          <i style="margin-left: 10px;" class="bi bi-heart"></i> -->
+          <a style="margin-left: 40px;
+          text-decoration: none;
+          color: black;" href="login.html">LOGIN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <h1 class="name">IMPART</h1>
+    <p class="text">I N D I A N S T R E E T C U L T U R E</p>
+</div>
+
+  <div class="banner">
+    <div class="banners">
+      <img
+        src="https://images.bewakoof.com/uploads/category/desktop/INSIDE_DESKTOP_BANNER_-_statement_shirts_(1)-1718698304.jpg"
+        class="card-img" alt="...">
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <img
+        src="https://rwdy.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fassets.rwdy%2Frwdy%2FK0bUxanDiKwk%2Flarge%2FBaby-blue.png&w=1920&q=75"
+        alt="Description of the image">
+      <p class="price">CRVD KING SWEATSHIRT ₹2199</p>
+      <div class="button-container">
+        <button class="add-to-cart">
+          ADD TO CART
+          <span class="icon"></span>
+        </button>
+        <button class="buy-now">
+          <a style="text-decoration: none; color: black;" href="Buy/buy.html">
+            BUY NOW
+          </a>
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://rwdy.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fassets.rwdy%2Frwdy%2FAyK7gg1chWxE%2Flarge%2Fwhite-hhoodie.png&w=1920&q=75"
+        alt="Description of the image">
+      <p class="price">CULTURE SWEATSHIRT ₹2699</p>
+      <div class="button-container">
+        <button class="add-to-cart">
+          <a style="text-decoration: none; color:white;" href="">
+          ADD TO CART
+        </a>
+          <span class="icon"></span>
+        </button>
+        <button class="buy-now">
+          <a style="text-decoration: none; color: black;" href="Buy/buy1.html">
+            BUY NOW
+          </a>
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://rwdy.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fassets.rwdy%2Frwdy%2FSaLMnHKlI0Ke%2Flarge%2F_brown-speia-.png&w=1920&q=75"
+        alt="Description of the image">
+      <p class="price">CATEGORIES SWEATSHIRT ₹2499</p>
+      <div class="button-container">
+        <button class="add-to-cart">
+          <a style="text-decoration: none; color: white;" href="">
+          ADD TO CART
+        </a>
+          <span class="icon"></span>
+        </button>
+        <button class="buy-now">
+          <a style="text-decoration: none; color: black;" href="Buy/buy2.html">
+            BUY NOW
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <img
+        src="https://rwdy.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fassets.rwdy%2Frwdy%2FDGo4npeQME0q%2Flarge%2FGRAPE.png&w=1920&q=75"
+        alt="Description of the image">
+      <p class="price">CRVD KING TEE ₹2199</p>
+      <div class="button-container">
+        <button class="add-to-cart">
+          <a style="text-decoration: none; color: white;" href="">
+          ADD TO CART
+        </a>
+          <span class="icon"></span>
+        </button>
+        <button class="buy-now">
+          <a style="text-decoration: none; color: black;" href="Buy/buy3.html">
+            BUY NOW
+          </a>
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://rwdy.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fassets.rwdy%2Frwdy%2FMvmrggpxynsD%2Flarge%2FCRVD-KING-BLACK.png&w=1920&q=75"
+        alt="Description of the image">
+      <p class="price">KARI TEE ₹2699</p>
+      <div class="button-container">
+        <button class="add-to-cart">
+          <a style="text-decoration: none; color: white;" href="">
+          ADD TO CART
+        </a>
+          <span class="icon"></span>
+        </button>
+        <button class="buy-now">
+          <a style="text-decoration: none; color: black;" href="Buy/buy4.html">
+            BUY NOW
+          </a>
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://rwdy.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fassets.rwdy%2Frwdy%2F7gafFAWwpFRo%2Flarge%2FLavander.png&w=1920&q=75"
+        alt="Description of the image">
+      <p class="price">CRVD KING TEE ₹2499</p>
+      <div class="button-container">
+        <button class="add-to-cart">
+          <a style="text-decoration: none; color: white;" href="">
+          ADD TO CART
+        </a>
+          <span class="icon"></span>
+        </button>
+        <button class="buy-now">
+          <a style="text-decoration: none; color: black;" href="Buy/buy5.html">
+            BUY NOW
+          </a>
+          
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <img
+        src="https://rwdy.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fassets.rwdy%2Frwdy%2FMq03sfCd82o5%2Flarge%2FIKATkurta-shirt.png&w=1920&q=75"
+        alt="Description of the image">
+      <p class="price">KING MOTIF TEE ₹2199</p>
+      <div class="button-container">
+        <button class="add-to-cart">
+          <a style="text-decoration: none; color: white;" href="">
+          ADD TO CART
+        </a>
+          <span class="icon"></span>
+        </button>
+        <button class="buy-now">
+          <a style="text-decoration: none; color: black;" href="Buy/buy6.html">
+            BUY NOW
+          </a>
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://rwdy.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fassets.rwdy%2Frwdy%2F6dzs2gWk58om%2Flarge%2FWhite-shirt.png&w=1920&q=75"
+        alt="Description of the image">
+      <p class="price">IKAT KURTA SHIRT ₹2699</p>
+      <div class="button-container">
+        <button class="add-to-cart">
+          <a style="text-decoration: none; color: white;" href="">
+          ADD TO CART
+        </a>
+          <span class="icon"></span>
+        </button>
+        <button class="buy-now">
+          <a style="text-decoration: none; color: black;" href="Buy/buy7.html">
+            BUY NOW
+          </a>
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://rwdy.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fassets.rwdy%2Frwdy%2FGSzn4dSyKu8T%2Flarge%2FMultii-mmotfi.png&w=1920&q=75"
+        alt="Description of the image">
+      <p class="price">MULTI MOTIF CULTURE SHIRT ₹2499</p>
+      <div class="button-container">
+        <button class="add-to-cart">
+          <a style="text-decoration: none; color: white;" href="">
+          ADD TO CART
+        </a>
+          <span class="icon"></span>
+        </button>
+        <button class="buy-now">
+          <a style="text-decoration: none; color: black;" href="Buy/buy8.html">
+            BUY NOW
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="banners">
+      <img src="/images/banner.png" class="card-img" alt="...">
+    </div>
+  </div>
+
+  <footer>
+    <p>CATEGORIES <a href="#">TOP WEAR</a> | <a href="#">BOTTOM WEAR</a> | <a href="#">UNDER WEAR</a></p>
+    <p>Contact us: hey@impart.com | Phone: +91129999990</p>
+    <div class="social-icons">
+        
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-pinterest"></i>
+    </div>
+
+    <p style="font-size: small; margin-top: 10px;">&copy; 2024 impart.All rights reserved</p>
+</footer>
+</body>
+
+</html>
